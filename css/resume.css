@@ -1,0 +1,126 @@
+#author-about {
+    display: flex !important;
+    padding-top: 1rem;
+    flex-direction: column;
+    align-items: center
+}
+
+
+/* 组信息 */
+#author-about .author-card-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%
+}
+
+#author-about .author-card-group:nth-child(odd) .author-card:nth-child(odd) {
+    width: calc(60% - 1rem)
+}
+
+#author-about .author-card-group:nth-child(odd) .author-card:nth-child(even) {
+    width: calc(40% - 1rem)
+}
+
+#author-about .author-card-group:nth-child(even) .author-card:nth-child(odd) {
+    width: calc(40% - 1rem)
+}
+
+#author-about .author-card-group:nth-child(even) .author-card:nth-child(even) {
+    width: calc(60% - 1rem)
+}
+
+/* 卡片内容信息 */
+.author-card {
+    color: var(--text-highlight-color);
+    position: relative;
+    background: var(--card-bg);
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    border: var(--card-border);
+    margin-top: 1.5rem;
+    border: var(--card-border);
+    -webkit-box-shadow: var(--box-shadow);
+    -moz-box-shadow: var(--box-shadow);
+    -ms-box-shadow: var(--box-shadow);
+    -o-box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow)
+}
+
+.author-card-desc {
+    font-size: 80%;
+    opacity: .8
+}
+
+.author-card-subtitle {
+    opacity: .8
+}
+
+.author-card-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-highlight-color)
+}
+
+/* 按钮 */
+@keyframes gradient {
+    0% {
+        background-position: 0 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0 50%
+    }
+}
+
+.author-card-btn {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    border-radius: 5em;
+    backdrop-filter: var(--backdrop-filter);
+    height: 2.5em;
+    background: rgba(255, 255, 255, .1);
+    padding: .5em .8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+
+.author-card-btn * {
+    color: #fff;
+    margin: .2em
+}
+
+.author-card-btn:hover {
+    background: var(--main) !important;
+    -webkit-box-shadow: var(--box-shadow) !important;
+    -moz-box-shadow: var(--box-shadow) !important;
+    -ms-box-shadow: var(--box-shadow) !important;
+    -o-box-shadow: var(--box-shadow) !important;
+    box-shadow: var(--box-shadow) !important
+}
+
+.author-card-btn:hover * {
+    color: var(--second) !important
+}
+
+/* 头像 */
+#author-about .author-img {
+    margin: auto;
+    width: 180px;
+    height: 180px;
+    position: relative;
+}
+
+
+
